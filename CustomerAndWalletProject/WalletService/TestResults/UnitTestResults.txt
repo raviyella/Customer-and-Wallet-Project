@@ -1,0 +1,74 @@
+Test Name:	NewUser_ValidCredentialsTest
+Test FullName:	WalletServiceUnitTest.WalletServiceTest.NewUser_ValidCredentialsTest
+Test Source:	c:\Users\Ravi\Documents\Visual Studio 2013\Projects\WalletService\WalletServiceUnitTest\WalletServiceTest.cs : line 63
+Test Outcome:	Passed
+Test Duration:	0:00:00.0972344
+
+
+Test Name:	Login_EmptyCredentialsTest
+Test FullName:	WalletServiceUnitTest.WalletServiceTest.Login_EmptyCredentialsTest
+Test Source:	c:\Users\Ravi\Documents\Visual Studio 2013\Projects\WalletService\WalletServiceUnitTest\WalletServiceTest.cs : line 12
+Test Outcome:	Passed
+Test Duration:	0:00:00.0664873
+
+
+Test Name:	Login_ValidCredentialsTest
+Test FullName:	WalletServiceUnitTest.WalletServiceTest.Login_ValidCredentialsTest
+Test Source:	c:\Users\Ravi\Documents\Visual Studio 2013\Projects\WalletService\WalletServiceUnitTest\WalletServiceTest.cs : line 29
+Test Outcome:	Passed
+Test Duration:	0:00:00.0668307
+
+
+Test Name:	Login_ValidEmailandInvalidPasswordTest
+Test FullName:	WalletServiceUnitTest.WalletServiceTest.Login_ValidEmailandInvalidPasswordTest
+Test Source:	c:\Users\Ravi\Documents\Visual Studio 2013\Projects\WalletService\WalletServiceUnitTest\WalletServiceTest.cs : line 46
+Test Outcome:	Passed
+Test Duration:	0:00:00.0646636
+
+
+Test Name:	DepositFunds_SuccessfulTransferredTest
+Test FullName:	WalletServiceUnitTest.WalletServiceTest.DepositFunds_SuccessfulTransferredTest
+Test Source:	c:\Users\Ravi\Documents\Visual Studio 2013\Projects\WalletService\WalletServiceUnitTest\WalletServiceTest.cs : line 83
+Test Outcome:	Passed
+Test Duration:	0:00:00.080535
+
+Result StandardOutput:	Ret = 1
+
+Test Name:	DepositFunds_InSufficientFundsTest
+Test FullName:	WalletServiceUnitTest.WalletServiceTest.DepositFunds_InSufficientFundsTest
+Test Source:	c:\Users\Ravi\Documents\Visual Studio 2013\Projects\WalletService\WalletServiceUnitTest\WalletServiceTest.cs : line 100
+Test Outcome:	Passed
+Test Duration:	0:00:00.0716334
+
+Result StandardOutput:	Ret = 0
+
+Test Name:	WithdrawFunds_SuccessfulWithdrawTest
+Test FullName:	WalletServiceUnitTest.WalletServiceTest.WithdrawFunds_SuccessfulWithdrawTest
+Test Source:	c:\Users\Ravi\Documents\Visual Studio 2013\Projects\WalletService\WalletServiceUnitTest\WalletServiceTest.cs : line 117
+Test Outcome:	Passed
+Test Duration:	0:00:00.0714855
+
+Result StandardOutput:	Ret = 1
+
+Test Name:	WithdrawFunds_InSufficientFundsTest
+Test FullName:	WalletServiceUnitTest.WalletServiceTest.WithdrawFunds_InSufficientFundsTest
+Test Source:	c:\Users\Ravi\Documents\Visual Studio 2013\Projects\WalletService\WalletServiceUnitTest\WalletServiceTest.cs : line 134
+Test Outcome:	Passed
+Test Duration:	0:00:00.0620033
+
+Result StandardOutput:	Ret = 0
+
+Test Name:	ViewBalance_ValidCredentialsTest
+Test FullName:	WalletServiceUnitTest.WalletServiceTest.ViewBalance_ValidCredentialsTest
+Test Source:	c:\Users\Ravi\Documents\Visual Studio 2013\Projects\WalletService\WalletServiceUnitTest\WalletServiceTest.cs : line 151
+Test Outcome:	Passed
+Test Duration:	0:00:00.0573823
+
+
+Test Name:	ViewBalance_InValidCredentialsTest
+Test FullName:	WalletServiceUnitTest.WalletServiceTest.ViewBalance_InValidCredentialsTest
+Test Source:	c:\Users\Ravi\Documents\Visual Studio 2013\Projects\WalletService\WalletServiceUnitTest\WalletServiceTest.cs : line 170
+Test Outcome:	Passed
+Test Duration:	0:00:00.0639825
+
+

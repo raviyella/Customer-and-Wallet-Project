@@ -1,0 +1,22 @@
+Project Description:
+
+The Betsson Wallet is accessible to end users by web page. 
+There are options of creating an account (Sign Up) and login using existing account (Log in). When user Signs up for the first time all the details entered are saved in a Database table. On successful sign up, the user will be redirected to login screen to perform login. The user login will verify the input credentials against this table.
+
+Upon login to the page he has the options to View Balance, Deposit funds and Withdraw funds from the wallet. This is done from/to a bank account that is linked to the user during the user Signup process.
+1. View Balance: This brings the current balance for that user from the Wallet hitting the Database.
+
+2. Withdraw funds: This is to withdraw funds from Wallet and deposit to the linked bank account. The amount entered should be <= the available balance in the Wallet for the transaction to be successful. Wallet Balance new = Wallet Balance old – Amount entered
+
+3. Deposit funds: This is to deposit funds to the Wallet from the linked bank account. For the transaction to be successful the amount entered should be <= to the balance of Bank account. Wallet Balance new = Wallet Balance old + Amount entered
+
+During the Withdraw and Deposit transactions when the button is hit a query is sent to the Database to get the bank details if not brought earlier during the same session.
+
+I have created a web page and a database to save the data.
+
+The database consists of 2 tables
+1. TBLWALLET: When a new user signs up the user information is inserted in this table. 
+This table is hit used for validating the user details when he Logins, get the Wallet Balance and to retrieve the bank account information.
+A default Wallet balance of 100 is set for all users.
+
+2. TBLCUSTOMERACCOUNT: This is a dummy tablet created to verify the balance against a bank account where a row gets inserted and a default balance of 1000 is added.

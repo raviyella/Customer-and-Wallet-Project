@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WalletService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/WalletService/WalletService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/WalletService/WalletService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WalletService" />
+      <xsd:import schemaLocation="http://localhost/WalletService/WalletService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWalletService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_Login_DataConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WalletService" name="detail" element="q1:DataConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_NewUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewUser" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_NewUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_NewUser_DataConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/WalletService" name="detail" element="q2:DataConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_DepositFunds_InputMessage">
+    <wsdl:part name="parameters" element="tns:DepositFunds" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_DepositFunds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DepositFundsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_DepositFunds_DataConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/WalletService" name="detail" element="q3:DataConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_WithdrawFunds_InputMessage">
+    <wsdl:part name="parameters" element="tns:WithdrawFunds" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_WithdrawFunds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WithdrawFundsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_WithdrawFunds_DataConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/WalletService" name="detail" element="q4:DataConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_ViewBalance_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewBalance" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_ViewBalance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_ViewBalance_DataConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/WalletService" name="detail" element="q5:DataConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_GetUserName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserName" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_GetUserName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_GetUserName_DataConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/WalletService" name="detail" element="q6:DataConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_GetUserAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAccount" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_GetUserAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_GetUserAccount_DataConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/WalletService" name="detail" element="q7:DataConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_GetAccountBalance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccountBalance" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_GetAccountBalance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccountBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWalletService_GetAccountBalance_DataConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/WalletService" name="detail" element="q8:DataConnectionFault" />
+  </wsdl:message>
+  <wsdl:portType name="IWalletService">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWalletService/Login" message="tns:IWalletService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWalletService/LoginResponse" message="tns:IWalletService_Login_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWalletService/LoginDataConnectionFaultFault" name="DataConnectionFaultFault" message="tns:IWalletService_Login_DataConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWalletService/NewUser" message="tns:IWalletService_NewUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWalletService/NewUserResponse" message="tns:IWalletService_NewUser_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWalletService/NewUserDataConnectionFaultFault" name="DataConnectionFaultFault" message="tns:IWalletService_NewUser_DataConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DepositFunds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWalletService/DepositFunds" message="tns:IWalletService_DepositFunds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWalletService/DepositFundsResponse" message="tns:IWalletService_DepositFunds_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWalletService/DepositFundsDataConnectionFaultFault" name="DataConnectionFaultFault" message="tns:IWalletService_DepositFunds_DataConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WithdrawFunds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWalletService/WithdrawFunds" message="tns:IWalletService_WithdrawFunds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWalletService/WithdrawFundsResponse" message="tns:IWalletService_WithdrawFunds_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWalletService/WithdrawFundsDataConnectionFaultFault" name="DataConnectionFaultFault" message="tns:IWalletService_WithdrawFunds_DataConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewBalance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWalletService/ViewBalance" message="tns:IWalletService_ViewBalance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWalletService/ViewBalanceResponse" message="tns:IWalletService_ViewBalance_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWalletService/ViewBalanceDataConnectionFaultFault" name="DataConnectionFaultFault" message="tns:IWalletService_ViewBalance_DataConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWalletService/GetUserName" message="tns:IWalletService_GetUserName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWalletService/GetUserNameResponse" message="tns:IWalletService_GetUserName_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWalletService/GetUserNameDataConnectionFaultFault" name="DataConnectionFaultFault" message="tns:IWalletService_GetUserName_DataConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWalletService/GetUserAccount" message="tns:IWalletService_GetUserAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWalletService/GetUserAccountResponse" message="tns:IWalletService_GetUserAccount_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWalletService/GetUserAccountDataConnectionFaultFault" name="DataConnectionFaultFault" message="tns:IWalletService_GetUserAccount_DataConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWalletService/GetAccountBalance" message="tns:IWalletService_GetAccountBalance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWalletService/GetAccountBalanceResponse" message="tns:IWalletService_GetAccountBalance_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWalletService/GetAccountBalanceDataConnectionFaultFault" name="DataConnectionFaultFault" message="tns:IWalletService_GetAccountBalance_DataConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWalletService" type="tns:IWalletService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IWalletService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataConnectionFaultFault">
+        <soap:fault use="literal" name="DataConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="NewUser">
+      <soap:operation soapAction="http://tempuri.org/IWalletService/NewUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataConnectionFaultFault">
+        <soap:fault use="literal" name="DataConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DepositFunds">
+      <soap:operation soapAction="http://tempuri.org/IWalletService/DepositFunds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataConnectionFaultFault">
+        <soap:fault use="literal" name="DataConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="WithdrawFunds">
+      <soap:operation soapAction="http://tempuri.org/IWalletService/WithdrawFunds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataConnectionFaultFault">
+        <soap:fault use="literal" name="DataConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ViewBalance">
+      <soap:operation soapAction="http://tempuri.org/IWalletService/ViewBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataConnectionFaultFault">
+        <soap:fault use="literal" name="DataConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserName">
+      <soap:operation soapAction="http://tempuri.org/IWalletService/GetUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataConnectionFaultFault">
+        <soap:fault use="literal" name="DataConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAccount">
+      <soap:operation soapAction="http://tempuri.org/IWalletService/GetUserAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataConnectionFaultFault">
+        <soap:fault use="literal" name="DataConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalance">
+      <soap:operation soapAction="http://tempuri.org/IWalletService/GetAccountBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataConnectionFaultFault">
+        <soap:fault use="literal" name="DataConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WalletService">
+    <wsdl:port name="BasicHttpBinding_IWalletService" binding="tns:BasicHttpBinding_IWalletService">
+      <soap:address location="http://localhost/WalletService/WalletService.svc/IWalletService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
